@@ -1,0 +1,27 @@
+{
+    "name": "liyu/dingo-serializer-switch",
+    "description": "A middleware to switch dingo serializer",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Yu Li",
+            "email": "liyu001989@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "dingo/api": "^2.0.0-alpha1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Liyu\\Dingo\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Liyu\\Dingo\\ServiceProvider"
+            ]
+        }
+    }
+}
