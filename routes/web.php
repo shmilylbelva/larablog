@@ -64,7 +64,8 @@ Route::group([
 	Route::get('category/create', 'CategoryController@create')->name('admin.category.create');
 	Route::post('category/store', 'CategoryController@store')->name('admin.category.store');
 	Route::get('category/edit/{category}', 'CategoryController@edit')->name('admin.category.edit');
-	Route::patch('category/update/{category}', 'CategoryController@update')->name('admin.category.update');
+    Route::get('category/state/{category}', 'CategoryController@state')->name('admin.category.state');
+    Route::patch('category/update/{category}', 'CategoryController@update')->name('admin.category.update');
 	Route::get('category/destroy/{category}', 'CategoryController@destroy')->name('admin.category.destroy');
 
 	// 文章
